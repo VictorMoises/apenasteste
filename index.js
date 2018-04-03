@@ -21,7 +21,7 @@ if (seucomando[0] == "!add") {
   
     var arrayOfObjects = JSON.parse(data)
     arrayOfObjects.links.push({
-      img: https://imgur.com/a/QbMZY[1], https://imgur.com/a/rYbY6[2],
+      img: [`https://imgur.com/a/QbMZY, https://imgur.com/a/rYbY6`,]
     })
   
     fs.writeFile('./images.json', JSON.stringify(arrayOfObjects), 'utf-8', function(err) {
