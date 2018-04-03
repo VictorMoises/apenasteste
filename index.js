@@ -13,7 +13,7 @@ const prefix = "-"
 const token = process.env.token;
 
 
-const seucomando = message.content.split(" ");
+const seucomando = message.content.split("!");
 if (seucomando[0] == "!add") {
   var fs = require('fs')
   fs.readFile('./images.json', 'utf-8', function(err, data) {
